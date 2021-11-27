@@ -6,10 +6,19 @@
     <meta charset="UTF-8">
     <!---<title> Responsive Registration Form | CodingLab </title>--->
     <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <div class="login100-pic js-tilt" data-tilt>
+        <img src="images/EDC WHITE.PNG" alt="IMG">
+    </div>
     <div class="container">
         <div class="title">Registration</div>
         <div class="content">
@@ -21,7 +30,7 @@
                     </div>
                     <div class="input-box">
                         <span class="details">TIET Roll Number</span>
-                        <input type="text" placeholder="Enter your username" class="detail-box" required>
+                        <input type="text" placeholder="Enter your Roll No." class="detail-box" required>
                     </div>
                     <div class="input-box">
                         <span class="details">TIET Email</span>
@@ -33,7 +42,11 @@
                     </div>
                     <div class="input-box">
                         <span class="details">Branch</span>
-                        <input type="text" placeholder="Enter your password" class="detail-box" required>
+                        <input type="text" placeholder="Enter your Branch" class="detail-box" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Skills</span>
+                        <input type="text" placeholder="Enter your SkillSet" class="detail-box" required>
                     </div>
                 </div>
                 <div class="gender-details">
@@ -96,7 +109,21 @@
             </form>
         </div>
     </div>
-
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
